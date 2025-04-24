@@ -1,1 +1,67 @@
 @import url(./reset.css);
+@font-face {
+    font-family:"PlayfairDisplay";
+    src: url(./fonts/PlayfairDisplay-VariableFont_wght.ttf) format("truetype");
+}
+
+body {
+    font-family: "Times New Roman", Georgia, Serif;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "PlayfairDisplay";
+    letter-spacing: 5px;
+  }
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    letter-spacing: 4px;
+    position: fixed;
+    top: 0;
+    margin: 0;
+    width: 100%;
+    background: white;
+    padding: 10px;
+}    
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-menu   {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.nav-menu, .nav-bar, li {
+    padding: 10px 20px;
+}
+
+.nav-bar:hover, li:hover {
+    background-color: rgba(211, 209, 209, 0.76);
+}
+
+.container  {
+    /* position: relative; */
+}
+
+.text-bottomleft {
+    /* position: absolute;
+    bottom: 0px;
+    left: 0px; */
+    font-size: 2em;
+    letter-spacing: 3px;
+    color: gray;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}

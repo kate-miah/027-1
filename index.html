@@ -7,24 +7,30 @@
     <link rel="stylesheet" href="./assets/style.css">
 </head>
 <body>
-    <header>
-        <h2>Gourmet au Catering</h2>
-        <nav>
-            <ul>
-                <li>About</li>
-                <li>Menu</li>
-                <li>Contact</li>
+    <nav class="menu">
+        <div class="nav-bar">
+            <a href="#">Gourmet au Catering</a>
+        </div>
+        <div>
+            <ul class="nav-menu">
+                <li class="menu1"><a href="#">About</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
-        </nav>
+        </div>
+    </nav>
+    <header>
+        <div class="container">
+            <img src="./assets/hamburger.jpg" alt="">
+            <div  class="text-bottomleft">
+               <h2 >Le Catering</h2> 
+            </div>
+        </div>    
     </header>
     <main>
-        <section>
-            <img src="" alt="">
-            <h2>Le Catering</h2>
-        </section>
-        <section>
+        <section class="">
             <div>
-                <img src="" alt="">
+                <img src="./assets/tablesetting2.jpg" alt="">
             </div>
             <div>
                 <h2>About Catering</h2>
@@ -47,7 +53,7 @@
                 <p>With syrup, butter and lots of berries 8.50</p>
             </div>
             <div>
-                <img src="" alt="">
+                <img src="./assets/tablesetting.jpg" alt="">
             </div>
         </section>
         <section>
@@ -57,10 +63,10 @@
             <p>Catering Service, 42nd Living St, 43043 New York, NY</p>
             <p>You can also contact us by phone 00553123-2323 or email catering@catering.com, or you can send us a message here:</p>
             <form method="get">
-                <input type="text" name="Name" id="" placeholder="Name">
-                <input type="number" name="People" id="" placeholder="How many people">
-                <input type="datetime-local" name="Date" id="">
-                <input type="text" name="Message" id="" placeholder="Message \ Special requirements">
+                <input type="text" name="Name" id="" placeholder="Name" required>
+                <input type="number" name="People" id="" placeholder="How many people"required>
+                <input type="datetime-local" name="Date" id="" required>
+                <input type="text" name="Message" id="" placeholder="Message \ Special requirements"required>
                 <button>SEND MESSAGE</button>
             </form>
         </section>
