@@ -6,26 +6,37 @@
 
 body {
     font-family: "Times New Roman", Georgia, Serif;
+ 
 
-}
+} 
+
 
 h1, h2, h3, h4, h5, h6 {
     font-family: "PlayfairDisplay";
     letter-spacing: 5px;
   }
+h2 {
+    font-size: 36px;
+    margin: 20px 0;
+}
 
-.menu {
+h4 {
+    font-size: 18px;
+}
+
+.nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 10px;
     letter-spacing: 4px;
     position: fixed;
+    z-index: 1;
     top: 0;
     margin: 0;
     width: 100%;
     background: white;
     padding: 10px;
+
 }    
 
 a {
@@ -44,24 +55,120 @@ a {
     padding: 10px 20px;
 }
 
-.nav-bar:hover, li:hover {
+.nav-bar:hover, li:hover, button:hover {
     background-color: rgba(211, 209, 209, 0.76);
 }
 
 .container  {
-    /* position: relative; */
+    position: relative;
+    width: 100%;
+
 }
 
 .text-bottomleft {
-    /* position: absolute;
-    bottom: 0px;
-    left: 0px; */
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
     font-size: 2em;
     letter-spacing: 3px;
     color: gray;
 }
 
-img {
+.main-img {
     width: 100%;
     height: auto;
+    object-fit: contain;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 70%;
+    
+}
+.flex div {
+    padding: 10px;
+}
+.section {
+    display: flex;
+    margin: 30px 0;
+}
+
+.menu-img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    /* padding: 10px 20px; */
+}
+
+.wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+}
+
+.bottom-border {
+    border-bottom: 1px solid rgb(231, 228, 228);
+    padding-bottom: 40px;
+
+}
+
+/* .contact {
+    padding: 10px;
+} */
+
+.wrap-contact {
+    display: flex;
+    align-items: flex-start;
+    padding: 10px 0;
+}
+
+.wrap-contact p {
+    padding: 10px 0;
+}
+
+.address {
+    color: #607d8b;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+input {
+    display: block;
+    border: none;
+    border-bottom: 1px solid;
+    padding: 20px 10px;
+}
+
+button {
+    border: none;
+    background-color: rgb(231, 228, 228);
+    display: flex;
+    justify-content: flex-start;
+    margin: 20px 0;
+    padding: 10px 15px;
+}
+
+footer {
+    text-align: center;
+    padding: 40px;
+    background-color: rgb(231, 228, 228);
+    font-size: 1rem;
 }
